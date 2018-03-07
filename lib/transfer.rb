@@ -10,10 +10,7 @@ attr_accessor :sender, :receiver, :status, :BankAccount, :amount, :name
   end
 
   def valid?
-    
-
       sender.valid? && receiver.valid?
-    
    end
 
    def execute_transaction
