@@ -10,11 +10,10 @@ attr_accessor :sender, :receiver, :status, :BankAccount, :amount, :name
   end
 
   def valid?
-    # ba1 = BankAccount.new(name)
-    # ba2 = BankAccount.new(name)
+    
 
       sender.valid? && receiver.valid?
-      # @balance > 0 && @status == "open"
+    
    end
 
    def execute_transaction
