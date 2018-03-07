@@ -13,7 +13,7 @@ attr_accessor :sender, :receiver, :status, :BankAccount, :amount, :name
     ba1 = BankAccount.new(name)
     ba2 = BankAccount.new(name)
 
-      ba1.valid?(name) || ba2.valid?(name)
+      ba1.valid? || ba2.valid?
    end
 
    def execute_transaction
