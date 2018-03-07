@@ -14,6 +14,7 @@ attr_accessor :sender, :receiver, :status, :BankAccount, :amount, :name
     # ba2 = BankAccount.new(name)
 
       ba1.valid? && ba2.valid?
+      @balance > 0 && @status == "open"
    end
 
    def execute_transaction
